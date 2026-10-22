@@ -1,4 +1,4 @@
-//import NavLinks from "./NavLinks";
+import NavLinks from "./NavLinks";
 import HomeLink from "../components/HomeLinks";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
       </div>
 
       {/* Category Navigation */}
-      {/* <NavLinks /> */}
+      <NavLinks />
     </header>
   );
 };
