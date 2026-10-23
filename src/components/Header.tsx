@@ -1,5 +1,6 @@
 import NavLinks from "./NavLinks";
 import HomeLink from "../components/HomeLinks";
+import UserInfo from "./UserInfo";
 
 const Header = () => {
   return (
@@ -8,6 +9,9 @@ const Header = () => {
         
         {/* Logo and Website Info */}
         <HomeLink></HomeLink>
+
+        {/* Authentication Buttons */}
+        <UserInfo />
       </div>
 
       {/* Category Navigation */}

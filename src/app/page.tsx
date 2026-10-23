@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import HomeAllProducts from "@/components/HomeAllProducts";
-import Marquee from "@/components/Marquee";
+//import Marquee from "@/components/Marquee";
 import ProductSection from "@/components/ProductSection";
 
 
@@ -63,9 +63,7 @@ export default async function Home() {
 
     <div className="mx-auto max-w-7xl px-4 pb-16 md:px-6 lg:px-8">
 
-       {/* Marquee */}
-      <Marquee />
-
+       
       {/* Banner */}
       <Banner />
 

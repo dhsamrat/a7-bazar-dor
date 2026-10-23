@@ -11,8 +11,8 @@ const Banner = () => {
     });
 
     return (
-        <section className="mx-auto max-w-7xl px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
-            <div className="flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-3xl border border-base-300 bg-base-100 px-5 py-8 shadow-sm sm:px-8 md:min-h-[460px] md:px-10 lg:min-h-[480px] lg:flex-row lg:px-12 xl:px-16">
+        <section className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+            <div className="flex min-h-420px flex-col items-center justify-center overflow-hidden rounded-3xl border border-base-300 bg-base-100 px-5 py-8 shadow-sm sm:px-8 md:min-h-460px md:px-10 lg:min-h-480px lg:flex-row lg:px-12 xl:px-16">
 
                 {/* Left Content */}
                 <div className="w-full text-center lg:w-1/2 lg:text-left">
@@ -44,7 +44,7 @@ const Banner = () => {
                         alt="Bazar Dor"
                         width={400}
                         height={300}
-                        className="h-auto w-full max-w-[240px] object-contain sm:max-w-[340px] md:max-w-[380px] lg:max-w-[450px] xl:max-w-[500px]"
+                        className="h-auto w-full max-w-240px object-contain sm:max-w-340px md:max-w-380px lg:max-w-450px xl:max-w-500px"
                         priority
                     />
                 </div>
