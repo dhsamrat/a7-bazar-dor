@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import HomeAllProducts from "@/components/HomeAllProducts";
-//import Marquee from "@/components/Marquee";
+import Marquee from "@/components/Marquee";
 import ProductSection from "@/components/ProductSection";
 
 
@@ -34,10 +34,6 @@ const getProducts = async (): Promise<product[]> => {
     "https://api.abcz.workers.dev/api/bazardor/products"
   );
 
-  // if (!res.ok) {
-  //   throw new Error("Failed to fetch products");
-  // }
-
   const data: product[] = await res.json();
 
   return data;
@@ -59,18 +55,19 @@ export default async function Home() {
     .slice(0, 6);
 
 
-  return (
+   return (
+    <main className="bg-[#F3F8F4]">
 
-    <div className="mx-auto max-w-7xl px-4 pb-16 md:px-6 lg:px-8">
+      {/* Marquee */}
+      <Marquee />
 
-       
       {/* Banner */}
       <Banner />
 
+      {/* Product Sections */}
+      <div className="mx-auto max-w-7xl px-4 pb-16 md:px-6 lg:px-8">
 
-     {/* Product Sections */}
-     <div>
-    {/* Section A - Price Increased */}
+        {/* Section A - Price Increased */}
         <ProductSection
           title="আজ দাম বেড়েছে"
           icon="▲"
@@ -87,9 +84,10 @@ export default async function Home() {
         {/* Section C - All Products */}
         
         <HomeAllProducts products={products} />
+        
 
-     </div>
-      
-    </div>
+      </div>
+
+    </main>
   );
 }

@@ -160,26 +160,26 @@ const SignInPage = () => {
           </div>
 
           {/* Social Login */}
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <button
-              type="button"
-              onClick={handleGoogleSignIn}
-              className="btn h-12 rounded-xl border border-gray-300 bg-white text-gray-800 shadow-none transition hover:bg-gray-50"
-            >
-              <FcGoogle size={22} />
-              <span>Google দিয়ে চালিয়ে যান</span>
-            </button>
+        
+<div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+  <button
+    type="button"
+    onClick={handleGoogleSignIn}
+    className="flex h-[38px] items-center justify-center gap-1.5 rounded-[10px] border border-[#d9dee7] bg-white px-2 text-xs font-medium text-gray-800 shadow-none transition hover:bg-gray-50"
+  >
+    <FcGoogle size={17} />
+    <span>Google দিয়ে চালিয়ে যান</span>
+  </button>
 
-            <button
-              type="button"
-              onClick={handleGithubSignIn}
-              className="btn h-12 rounded-xl border border-gray-300 bg-white text-gray-800 shadow-none transition hover:bg-gray-50"
-            >
-              <FaGithub size={21} />
-              <span>GitHub দিয়ে চালিয়ে যান</span>
-            </button>
-          </div>
-
+  <button
+    type="button"
+    onClick={handleGithubSignIn}
+    className="flex h-[38px] items-center justify-center gap-1.5 rounded-[10px] border border-[#d9dee7] bg-white px-2 text-xs font-medium text-gray-800 shadow-none transition hover:bg-gray-50"
+  >
+    <FaGithub size={17} />
+    <span>GitHub দিয়ে চালিয়ে যান</span>
+  </button>
+</div>
           {/* Sign Up */}
           <p className="mt-6 text-center text-sm text-gray-500">
             অ্যাকাউন্ট নেই?{" "}
